@@ -1,0 +1,75 @@
+@import url("../variables.css");
+
+.main-header {
+  background: var(--black-color);
+  padding: 3rem 3rem;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+}
+
+.action-wrapper {
+  display: flex;
+  gap: 1.7rem;
+  transition: 1s;
+}
+
+@media (max-width: 900px) {
+  .action-wrapper {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+    right: 0rem;
+    width: 100%;
+    background: black;
+    padding: 1rem;
+    z-index: -1;
+  }
+}
+
+.show-nav {
+  transform: translateY(10rem);
+  z-index: 1;
+}
+
+.action {
+  font-family: "Coda", cursive;
+  font-weight: 400;
+  color: var(--golden-color);
+  text-transform: capitalize;
+  padding: 0.6rem 1.3rem;
+  border: 1px solid var(--golden-color);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+}
+
+.action:hover {
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+
+.nav-toggle {
+  border: 0;
+  background: transparent;
+  color: var(--golden-color);
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+  transition: 500ms;
+}
+
+.nav-toggle:hover {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 899px) {
+  .nav-toggle {
+    display: block;
+  }
+}

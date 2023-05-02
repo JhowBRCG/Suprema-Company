@@ -1,0 +1,45 @@
+@import url("../variables.css");
+
+form {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 620px;
+  margin: auto;
+  gap: 4.3rem;
+}
+
+.main-input {
+  background: transparent;
+  border: 0;
+  border: 3px solid var(--green-color);
+  padding: 1rem;
+  color: var(--green-color);
+}
+
+.area {
+  height: 213px;
+}
+
+.submit {
+  background: transparent;
+  border: 0;
+  border: 3px solid var(--green-color);
+  color: var(--green-color);
+  width: 216px;
+  height: 58px;
+  align-self: flex-start;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 100ms;
+}
+
+.submit:hover {
+  background: var(--green-color);
+  color: var(--white-color);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suprema Company</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coda&family=Fira+Code:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/components/main-header.css" />
+    <link rel="stylesheet" href="css/components/main-title.css" />
+    <link rel="stylesheet" href="css/components/main-form.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <a href="index.html">
+          <img src="assets/logo.svg" alt="Logo" />
+        </a>
+        <button aria-label="menu" class="nav-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="action-wrapper">
+          <a class="action" href="#">sobre</a>
+          <a class="action" href="contact.html">contato</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="wrapper-title-form">
+        <h1 class="main-title">Entre em contato conosco</h1>
+      </div>
+
+      <form
+        action="https://formsubmit.co/2afd639561c411ab11073482910a1925"
+        method="POST"
+      >
+        <div class="form-container">
+          <input
+            class="main-input"
+            type="email"
+            name="email"
+            aria-label="Seu email"
+            placeholder="Seu Email"
+            required
+          />
+          <textarea
+            class="main-input area"
+            name="text"
+            id="text"
+            aria-label="Sua mensagem"
+            placeholder="Sua mensagem"
+            required
+          ></textarea>
+
+          <input
+            type="submit"
+            class="submit"
+            value="Enviar"
+            aria-label="Enviar"
+          />
+
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/thanks.html"
+          />
+        </div>
+      </form>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/17c101b897.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/nav-bar.js"></script>
+  </body>
+</html>
