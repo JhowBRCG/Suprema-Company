@@ -9,15 +9,15 @@ form {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 620px;
+  max-width: calc(688px + 3.5rem);
   margin: auto;
   gap: 4.3rem;
-}
-
-@media (max-width: 700px) {
-  .form-container {
-    padding: 0 1rem;
-  }
+  background: linear-gradient(
+    233.84deg,
+    #0f0f0f -2.39%,
+    rgba(15, 15, 15, 0) 71.11%
+  );
+  padding: 3.5rem 3.5rem;
 }
 
 .main-input {
