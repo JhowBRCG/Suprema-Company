@@ -49,3 +49,19 @@ form {
   background: var(--green-color);
   color: var(--white-color);
 }
+
+.thanks-container {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 10rem;
+  border: 3px double var(--green-color);
+  max-width: 500px;
+  padding: 4rem 1rem;
+  box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.452);
+}
+
+.padding {
+  padding: 1rem;
+}
