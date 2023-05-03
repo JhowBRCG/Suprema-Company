@@ -16,27 +16,26 @@
 .action-wrapper {
   display: flex;
   gap: 1.7rem;
-  transition: 1s;
+  transition: all 500ms;
 }
 
 @media (max-width: 900px) {
   .action-wrapper {
     position: fixed;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
-    top: 0;
-    right: 0rem;
+    top: 10.1rem;
     width: 100%;
     background: black;
-    padding: 1rem;
-    z-index: -1;
+    height: 0;
+    overflow: hidden;
   }
 }
 
 .show-nav {
-  transform: translateY(10rem);
+  height: 17rem;
   z-index: 1;
+  padding: 1rem;
 }
 
 .action {
