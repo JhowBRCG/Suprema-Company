@@ -33,7 +33,7 @@
 }
 
 .show-nav {
-  height: 17rem;
+  height: calc(100vh - 10.1rem);
   z-index: 1;
   padding: 1rem;
 }
