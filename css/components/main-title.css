@@ -6,6 +6,12 @@
   color: var(--golden-color);
 }
 
+.wrapper-title {
+  max-width: 845px;
+  text-align: center;
+  margin: 188px auto 89px auto;
+}
+
 .wrapper-title-form {
   padding: 6.5rem 0rem;
   text-align: center;
@@ -14,5 +20,9 @@
 .main-text {
   font-weight: 400;
   font-size: 2.4rem;
+  color: var(--white-color);
+}
+
+span[data-text-color="white"] {
   color: var(--white-color);
 }

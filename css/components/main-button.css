@@ -1,0 +1,31 @@
+@import url("../variables.css");
+
+.main-button {
+  display: block;
+  background: var(--green-color);
+  color: var(--second-black-color);
+  border-radius: 0.7rem;
+  text-transform: uppercase;
+  padding: 2.3rem 2.9rem;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+  max-width: fit-content;
+  text-align: center;
+  box-shadow: -7px 7px 0 var(--black-color);
+  transition: 100ms;
+}
+
+.main-button:active {
+  transform: translateY(4px);
+  box-shadow: -3px 3px 0 var(--black-color);
+}
+
+.wrapper-button {
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  padding: 0 1rem;
+}
