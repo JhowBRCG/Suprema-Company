@@ -16,6 +16,16 @@
   transition: 100ms;
 }
 
+@media (max-width: 530px) {
+  .main-button {
+    font-size: 1.3rem;
+  }
+}
+
+.main-button:hover {
+  color: var(--white-color);
+}
+
 .main-button:active {
   transform: translateY(4px);
   box-shadow: -3px 3px 0 var(--black-color);
@@ -24,8 +34,4 @@
 .wrapper-button {
   display: flex;
   justify-content: center;
-}
-
-.hero {
-  padding: 0 1rem;
 }
