@@ -29,12 +29,13 @@
     background: black;
     height: 0;
     overflow: hidden;
+    z-index: 1;
   }
 }
 
 .show-nav {
   height: calc(100vh - 10.1rem);
-  z-index: 1;
+
   padding: 1rem;
 }
 
