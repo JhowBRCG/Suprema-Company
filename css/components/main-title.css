@@ -2,14 +2,13 @@
 
 .main-title {
   font-weight: 400;
-  font-size: 3.2rem;
+  font-size: 4rem;
   color: var(--golden-color);
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .wrapper-title {
-  max-width: 845px;
-  text-align: center;
-  margin: 188px auto 89px auto;
+  max-width: 432px;
 }
 
 .wrapper-title-form {

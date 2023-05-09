@@ -6,4 +6,14 @@
   --second-black-color: #252424;
   --green-color: #149631;
   --retancle-color: #4e3636;
+  --bg-button: linear-gradient(
+    89.95deg,
+    #149631 41.36%,
+    rgba(20, 150, 49, 0) 160.3%
+  );
+  --bg-hero-section: linear-gradient(
+    180deg,
+    #252424 77.8%,
+    rgba(37, 36, 36, 0) 100%
+  );
 }

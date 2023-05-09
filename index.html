@@ -28,7 +28,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Coda&family=Fira+Code:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Josefin+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -38,39 +38,136 @@
     <link rel="stylesheet" href="css/components/main-title.css" />
     <link rel="stylesheet" href="css/components/main-hero.css" />
     <link rel="stylesheet" href="css/components/main-button.css" />
+    <link rel="stylesheet" href="css/components/main-contact.css" />
+    <link rel="stylesheet" href="css/components/main-footer.css" />
   </head>
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <img src="assets/logo.svg" alt="Logo" />
-        <button aria-label="menu" class="nav-toggle">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+        <div class="row">
+          <img src="assets/img/logo.svg" alt="Logo" />
+          <button aria-label="menu" class="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
 
         <div class="action-wrapper">
           <a class="action" href="#">sobre</a>
-          <a class="action" href="contact.html">contato</a>
-          <a class="action" href="#">social</a>
+          <a class="action" href="#contact">contato</a>
+          <a class="action" href="#footer">social</a>
         </div>
       </nav>
     </header>
 
     <main>
-      <article class="hero">
-        <div class="wrapper-title">
-          <h1 class="main-title fade">
-            Tenha um time completo de marketing<span data-text-color="white">
-              atuando no crescimento do seu negócio</span
-            >
-          </h1>
+      <section class="hero-section">
+        <div class="hero-container">
+          <article class="main-hero">
+            <div class="wrapper-title">
+              <h1 class="main-title fade">
+                <span data-text-color="white">A</span> melhor solução
+                <span data-text-color="white">para o seu negócio crescer</span>
+              </h1>
+            </div>
+            <p class="fade">Aumente suas vendas e tenha mais sucesso</p>
+            <a href="#contact">
+              <button class="main-button">Começar agora</button>
+            </a>
+          </article>
+          <figure class="hero-img">
+            <img src="assets/img/chart.png" alt="Grafico" />
+          </figure>
         </div>
-        <div class="wrapper-button">
-          <a href="contact.html" class="main-button"
-            >quero saber como montar meu time de marketing</a
+      </section>
+      <section class="main-contact" id="contact">
+        <div class="contact-container">
+          <article class="contact-text">
+            <div class="wrapper">
+              <h2 class="main-title">Entre em contato conosco</h2>
+            </div>
+            <p>Resposta rápida</p>
+            <p>24/7 online</p>
+            <p>Tire qualquer dúvida</p>
+            <p>Converse com a nossa equipe</p>
+          </article>
+
+          <form
+            action="https://formsubmit.co/2afd639561c411ab11073482910a1925"
+            method="POST"
           >
+            <div class="wrapper-input">
+              <input
+                class="main-input"
+                name="name"
+                type="text"
+                placeholder="Digite o seu nome"
+                required
+              />
+              <input
+                class="main-input"
+                type="email"
+                name="email"
+                placeholder="Digite o seu email"
+                required
+              />
+              <input
+                class="main-input"
+                type="tel"
+                name="phone"
+                placeholder="(00) 12345-67489"
+                maxlength="20"
+                required
+              />
+              <textarea
+                name="message"
+                class="main-input area"
+                name=""
+                placeholder="Sua mensagem..."
+              ></textarea>
+
+              <input
+                type="hidden"
+                name="_next"
+                value="http://suprema-company.netlify.app/thanks.html"
+              />
+              <button class="main-button">Enviar</button>
+              <p>Ou</p>
+              <a href="#"
+                ><img src="assets/img/whatsapp-logo.svg" alt="whatsapp logo"
+              /></a>
+            </div>
+          </form>
         </div>
-      </article>
+      </section>
     </main>
+    <footer id="footer">
+      <ul>
+        <li>
+          <a
+            href="mailto:supremacompany@gmail.com
+          "
+            ><img src="assets/img/mail-icon.png" alt="email logo"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/company/suprema-company/"
+            target="_blank"
+            ><img src="assets/img/linkedin-icon.png" alt="linkedin logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/supremacompany/" target="_blank"
+            ><img src="assets/img/instagram-icon.png" alt="instragram logo"
+          /></a>
+        </li>
+        <li>
+          <a href="https://wa.me/message/ANM5BRMQR3O5C1" target="_blank"
+            ><img src="assets/img/whatsapp-icon.png" alt="whatsapp logo"
+          /></a>
+        </li>
+      </ul>
+    </footer>
 
     <script
       src="https://kit.fontawesome.com/17c101b897.js"

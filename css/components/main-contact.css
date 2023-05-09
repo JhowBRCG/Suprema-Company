@@ -1,0 +1,133 @@
+@import url("../variables.css");
+
+.main-contact {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  background: rgb(37, 36, 36);
+  background: linear-gradient(
+    50deg,
+    rgba(37, 36, 36, 1) 0%,
+    rgba(37, 36, 36, 1) 50%,
+    rgba(0, 4, 8, 1) 100%
+  );
+  /* padding: 10.7rem 1rem 8.5rem 1rem; */
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7.3rem;
+}
+
+@media (max-width: 750px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+.contact-text .wrapper {
+  max-width: 320px;
+  margin-bottom: 3.5rem;
+}
+
+.contact-text p {
+  color: var(--white-color);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.contact-text p::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #4e3636;
+  position: absolute;
+  left: -15px;
+  top: 12px;
+}
+
+form {
+  padding: 3.5rem 3.8rem 4.5rem 3.8rem;
+  background: linear-gradient(180deg, #000000 21.13%, rgba(0, 0, 0, 0) 100%);
+  width: 334px;
+  border-radius: 2rem;
+  position: relative;
+}
+
+@media (max-width: 750px) {
+  form {
+    width: 100%;
+  }
+}
+
+.wrapper-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-input {
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.area {
+  height: 14rem;
+}
+
+form p {
+  color: var(--white-color);
+  font-family: "Josefin Sans";
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: relative;
+}
+
+form p::before {
+  content: "";
+  display: block;
+  width: 29px;
+  height: 2px;
+  position: absolute;
+  background: var(--white-color);
+  left: -38px;
+  top: 7px;
+}
+
+form p::after {
+  content: "";
+  display: block;
+  width: 29px;
+  height: 2px;
+  position: absolute;
+  background: var(--white-color);
+  right: -38px;
+  top: 7px;
+}
+
+.thanks-section {
+  display: grid;
+  background: var(--bg-main-color);
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.thanks-container {
+  padding: 2rem;
+  text-align: center;
+  border: 3px double var(--green-color);
+  box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.452);
+}
