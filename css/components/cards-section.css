@@ -1,0 +1,59 @@
+@import url("../variables.css");
+
+.cards-section {
+  padding-top: 152px;
+  padding-bottom: 190px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: rgb(37, 36, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(37, 36, 36, 1) 0%,
+    rgba(69, 65, 65, 1) 58%
+  );
+}
+
+.cards-section .wrapper {
+  text-align: center;
+  margin-bottom: 133px;
+}
+
+.container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 345px);
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.main-card {
+  width: 34.56rem;
+  border-radius: 2rem 2rem 2rem 6rem;
+  padding: 3.2rem 2.5rem 4.8rem 2.5rem;
+  background: #1b1919;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.466);
+}
+
+.main-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.466);
+}
+
+.main-card img {
+  margin-bottom: 2.9rem;
+}
+
+.main-card h3 {
+  text-transform: uppercase;
+  color: var(--golden-color);
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 0.6rem;
+}
+
+.main-card p {
+  font-family: "Fira Code";
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white-color);
+}

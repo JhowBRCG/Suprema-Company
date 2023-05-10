@@ -40,3 +40,17 @@ span[data-text-color="white"] {
     opacity: 1;
   }
 }
+
+.sub-title {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  color: var(--golden-color);
+}
+
+@media (max-width: 510px) {
+  .sub-title {
+    font-size: 2rem;
+  }
+}
